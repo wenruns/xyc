@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="" >
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+        <title>专属于你的520</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                border-spacing: 0px;
+                letter-spacing: 0px;
+                font-size: 4vw;                
+            }
+            .box{
+                height: 180vw;
+                position: relative;
+                left: -2vw;
+                width: 100vw;
+                overflow: hidden;
+                margin: 0px;
+                padding: 0px;
+                /*visibility: hidden;*/
+                display: none;
+            }
+            .云彩{
+                position: absolute;
+                left: 0vw;
+                top: 0vw;
+                height: 70vw;
+            }
+            .告白气球{
+                position: absolute;
+                top: 0vw;
+                left: 0px;
+                width: 75vw;
+            }
+            .love{
+                position: absolute;
+                top: 75vw;
+                left: 10vw;
+                z-index: 2;
+                width: 80vw;
+            }
+            .大心框{
+                position: absolute;
+                top: 60vw;
+                width: 100vw;
+                height: auto;
+            }
+            .心型气球{
+                position: absolute;
+                top: 40vw;
+                left: 25vw;
+                width: 40vw;
+                height: auto;
+            }
+            .气球1{
+                position: absolute;
+                left: 80vw;
+                top: 5vw;
+                width: 20vw;
+            }
+            .子飞机{
+                position: absolute;
+                top: 25vw;
+                left: 2vw;
+                width: 15vw;
+            }
+
+            .红字条{
+                position: absolute;
+                top: 155vw;
+                width: 100vw;
+            }
+            .s520{
+                position:absolute;
+                top: 155vw;
+                width: 80vw;
+                height: 18vw;
+                left: 10vw;
+            }
+            .双心{
+                position: absolute;
+                top: 115vw;
+                width: 25vw;
+                left: 30vw;
+            }
+            .信封{
+                height: 100vh;
+                width: 100vw;
+                background: white;
+                margin: 0px;
+                padding: 0px;
+                border-spacing: 0px;
+                position: relative;
+            }
+            .信封>img{
+                width: 100%;
+                height: 100%;
+            }
+            .信封>.desc{
+                text-align: center;
+                position: absolute;
+                width: 80vw;
+                left: 10vw;
+                top: 25vh;
+            }
+            .信封>.button{
+                position: absolute;
+                top: 78vh;
+                font-weight: bold;  
+                left: 40vw;
+                width: 20vw;
+                text-align: center;
+                color: blue;
+                text-decoration: underline;
+                z-index: 1000;
+                cursor: pointer;
+            }
+            .music{
+                visibility: hidden;
+                position: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <audio class="music"  loop src="./bunengshuodemimi.mp3"></audio>
+        <div class="box">
+            <img class="云彩" src="./云彩.jpg" alt="">
+            <img class="告白气球" src="./告白气球.jpg" alt="">
+            <img class="大心框" src="./大心框.jpg" alt="">
+            <img class="love" src="./love.jpg" alt="">
+            <img class="心型气球" src="./心型气球.jpg" alt="">
+            <img class="气球1" src="./气球1.jpg" alt="">
+            <img class="子飞机" src="./子飞机.jpg" alt="">
+            <img class="红字条" src="./红字条.jpg" alt="">
+            <img class="s520" src="./520.jpg" alt="">
+            <img class="双心" src="./双心.jpg" alt="">
+        </div>
+        <div class="信封" class="">
+            <div class="desc">
+                <p>最美的不是下雨天</p>
+                <p>是曾与你躲过雨的屋檐~</p>
+            </div>
+            <a class="button" onclick="openLetter">拆开</a>
+            <img  src="./信封.jpg" alt="">
+        </div>
+        <script>
+            window.onload = function(){
+                document.querySelector('.music').play();
+            // alert(document.querySelector('.button').innerHT);
+                document.querySelector('.button').addEventListener('onclick', function(e){
+                    alert('ss');
+                });
+                            
+            }
+            function openLetter(e){
+                alert("sssss");
+            }
+        </script>
+    </body>
+</html>
