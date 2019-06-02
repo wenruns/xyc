@@ -116,6 +116,7 @@
                 text-decoration: underline;
                 z-index: 1000;
                 cursor: pointer;
+                display: inline-block;
             }
             .music{
                 visibility: hidden;
@@ -149,7 +150,9 @@
             window.onload = function(){
                 document.querySelector('.music').play();
                 alert(document.querySelector('.button').innerHT);
-                document.querySelector('.button').addEventListener('onclick', function(e){
+                let obj = document.querySelector('.button');
+                console.log(obj);
+                obj.addEventListener('touchstart', function(e){
                     alert('ss');
                 });
                             
